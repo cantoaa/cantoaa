@@ -10,7 +10,6 @@ bet = 0
 sumcardsD = 0
 money = 1000
 action = ""
-start = 0
 doubled = 0
 
 def AddCard():
@@ -48,7 +47,6 @@ PlayerActions = {
 print("Welcome to Blackjack")
 print("Instructions: \nDo a bet \nCheck the cards \nMake an action: \n Add = Get one more card \n Double = You double your bet but cant make other commands after that \n Stay = You stay with your cards \n \n Objective: Get your sum of cards higher than the dealer, but not beyond 21. \n \n \n")
 print("Game started")
-start = 1
 while money > 0:
         bet = int(input("Insert bet: "))
         DistributeCards()
