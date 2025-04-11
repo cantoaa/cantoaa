@@ -58,7 +58,11 @@ else:
                     number1 = RomanNInverse[((ITR + 1) * 10 ** position) - 9 * 10 ** (len(number) - 1)]
                     sumOfLetters.append(number1)
                 number2 = RomanNInverse[(ITR + 1) * 10 ** (len(number) - 1)]
+                temp = ""
                 sumOfLetters.append(number2)
+                temp = sumOfLetters[len(sumOfLetters) - 1]
+                sumOfLetters[len(sumOfLetters) - 1] = number1
+                sumOfLetters[len(sumOfLetters) - 2] = temp
                 number = int(number)
                 number -= (RomanN[number2] - RomanN[number1])
                 ITR -= ITR
